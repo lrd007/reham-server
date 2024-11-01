@@ -1,0 +1,145 @@
+
+.bottom__nav{
+    padding: 15px 90px;
+    /* .nav__breadcrumb{
+
+        .breadcrumb{
+            .breadcrumb-item{
+                a{
+                    color: $gray-04;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .progress__program{
+        p{
+            color: $primary-01;
+            font-weight: 600;
+            span{
+                color: $gray-04;
+                font-weight: 700;
+                margin: 0 5px;
+            }
+        }
+    }
+   @media screen and (max-width: 768px) {
+    
+        .nav__breadcrumb{
+            display: none;
+        }
+        .progress__program{
+           padding: 10px 0;
+        }
+   } */
+   .breadcrumb__program{
+    margin-bottom: 40px;
+    .breadcrumb-item{
+        &.home{
+            margin-left: 30px;
+        }
+        column-gap: 13px;
+        color: $primary-01;
+        a{
+            color: $primary-01;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        display: none;
+    }
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}
+
+.layout-main{
+    .layout-row{
+        column-gap: 10px;
+        position: relative;
+        .side-open{
+            position: fixed;
+            top: 100px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 1.5rem;
+            background-color: $primary-01;
+            border: 2px solid $white;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 15px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        
+        }
+        .side-menu{
+            width: 20%;
+
+            &.--close{
+                width: 0;
+                overflow: hidden;
+
+            }
+            &.--open{
+                transition: all .5s;
+                width: 230px;
+            }
+        }
+        .main{
+            flex: 1 1 0;
+        }
+        .layout-main{
+            flex: 1 1 0;
+            width: 70%;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        
+        .layout-row{
+            position: unset;
+
+            .side-menu{
+                background-color: $white;
+                position: absolute;
+                right: 0;
+                z-index: 1000px;
+                height: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                &.--open{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    @media  (min-width: 768px) and ( max-width: 1024px) {
+        
+        .container, .container-fluid{
+            width: 95%;
+        }
+    }
+    @media  (min-width: 1024px) and ( max-width: 1300px){
+        
+        .container, .container-fluid{
+            width: 100%;
+        }
+    }
+    @media  screen and ( min-width: 1300px)  {
+        .container, .container-fluid.layout-fluid{
+            width: 992px;
+        }
+    }
+    
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Chapter",
+    "alias": "chapter",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Chapter\\Providers\\ChapterServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Setting",
+    "alias": "setting",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Setting\\Providers\\SettingServiceProvider",
+        "Modules\\Setting\\Providers\\EventServiceProvider"
+    ],
+    "files": [
+        "helpers.php"
+    ]
+}

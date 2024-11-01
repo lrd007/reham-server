@@ -1,0 +1,13 @@
+{
+    "name": "AudioBook",
+    "alias": "audiobook",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AudioBook\\Providers\\AudioBookServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

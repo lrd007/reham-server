@@ -1,0 +1,13 @@
+{
+    "name": "SuccessStory",
+    "alias": "successstory",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SuccessStory\\Providers\\SuccessStoryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

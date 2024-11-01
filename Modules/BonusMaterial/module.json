@@ -1,0 +1,13 @@
+{
+    "name": "BonusMaterial",
+    "alias": "bonusmaterial",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\BonusMaterial\\Providers\\BonusMaterialServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

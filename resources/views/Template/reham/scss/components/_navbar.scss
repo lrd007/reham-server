@@ -1,0 +1,50 @@
+.navbar__main{
+    background-color: $primary-01;
+    padding: 8px 15px;
+    overflow: hidden;
+    .nav__logo{
+        width: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    ul.nav__items{
+        width: 100%;
+        gap: 55px;
+        li.nav__item{
+            a{
+                color: $white;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        padding: 20px;
+        .nav__logo{
+            display: flex;
+            justify-content: center;
+        }
+        ul.nav__items{
+            margin-top: 15px;
+            gap: 30px;
+        }
+    }
+}
+
+.navbar__standard{
+    padding: 80px 0;
+
+    .nav__link{
+        a{
+            color: $primary-01;
+            font-size: 1.4rem;
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        .container{
+            width: 996px;
+        }
+    }
+}

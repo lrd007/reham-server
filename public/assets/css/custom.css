@@ -1,0 +1,180 @@
+.bootstrap-tagsinput {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: block;
+  padding: 4px 6px;
+  color: #555;
+  border-radius: 4px;
+  max-width: 100%;
+  line-height: 22px;
+  cursor: text;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 0 6px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: white;
+  padding: 2px 5px;
+  background-color: #6c5ceb;
+  border-color: #3f2ed4;
+  border-radius: 3px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "x";
+  padding: 0px 2px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.import-close-button{
+    position: absolute;
+    right: 30px;
+    font-size: 25px;
+  }
+
+.dataTables_processing{
+  background: #f3f4f6;
+}
+
+.select2-search__field{
+  width: 100% !important;
+}
+
+.important-btn-danger {
+  box-shadow: 0 0 0 rgb(241 85 108 / 50%) !important;
+  color: #fff !important;
+  background-color: #f1556c !important;
+  border-color: #f1556c !important;
+}
+
+.important-btn-success {
+  box-shadow: 0 0 0 rgb(26 188 156 / 50%) !important;
+  color: #fff !important;
+  background-color: #1abc9c !important;
+  border-color: #1abc9c !important;
+}
+
+.spinner-border{
+  display: block !important;
+}
+
+.dropdown-menu.show {
+  cursor: pointer !important;
+}
+
+.navbar-custom{
+  background-color:#ea8bb8
+}
+
+.navbar-custom .topnav-menu .nav-link{
+  color: white;
+}
+
+.btn-primary,
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary.focus, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active,
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link,
+.page-item.active .page-link, 
+.select2-selection__choice,
+.btn-primary.dropdown-toggle,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.flatpickr-day.selected,
+.datepicker table tr td.active.active {
+  background-color: #ea8bb8 !important;
+  border-color: #ea8bb8 !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .btn-primary:active, .btn-primary:focus, .page-link:focus {
+  box-shadow: 0 0 0 rgb(235 142 186 / 50%);
+}
+
+.bg-soft-primary {
+  color: #ea8bb8 !important;
+  background-color: rgb(235 142 186 / 20%) !important;
+}
+
+.form-control:focus{
+  color: #d96ca0 !important;
+  border-color: #d96ca0 !important;
+}
+
+#sidebar-menu .menuitem-active .active, 
+#sidebar-menu .menuitem-active > a, 
+#sidebar-menu > ul > li > a:hover, 
+#sidebar-menu > ul > li > a:focus, 
+#sidebar-menu > ul > li > a:active,
+.nav-second-level li a:focus, .nav-second-level li a:hover{
+  color: #ea8bb8 !important;
+}
+
+.nav-bordered a.active{
+  border-bottom: 2px solid #ea8bb8 !important
+}
+
+#sidebar-menu > ul > li > a i{
+  font-size: 25px;
+  margin: 0 13px 0 0px;
+}
+
+#sidebar-menu > ul > li > a {
+  padding: 11px 10px;
+}
+
+.spinner{
+  border-left: 5px solid #ea8bb9 !important;
+}
+
+.border-primary{
+  border-color: #ea8bb9 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #ea8bb9;
+  background-color: #ea8bb9;
+}
+
+body, .toast-message, .btn, .form-control{
+  font-size: 17px;
+}
+
+.btn .mdi:before {
+  font-size: 20px;
+}
+
+.nav-second-level li a, #sidebar-menu > ul > li > a{
+  font-size: 19px !important;
+}

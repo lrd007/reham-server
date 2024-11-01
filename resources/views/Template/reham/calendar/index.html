@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="../favicon_io/logo192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon_io/favicon-16x16.png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.rtl.css" />
+    <!-- fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="../css/style.css" />  
+    <title>Reham | Calnedar </title>
+</head>
+<body>
+    <!-- ⭐⭐⭐⭐⭐ navbar  ⭐⭐⭐⭐⭐-->
+        <nav class="navbar__main">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-3 col-12 col-xs-3">
+                        <div class="nav__logo ">
+                            <img src="../src/images/reham-logo-arabic-white.png"  class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-9 col-md-6 d-flex justify-content-center justify-content-md-end">
+                        <ul class="nav__items d-flex list-unstyled justify-content-center  justify-content-md-end">
+                            <li class="nav__item">
+                                <a href="/lessones-page/index.html" class="nav__link">
+                                    البرامج
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/profile/index.html" class="nav__link">
+                                    حسابك
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/lessones-page/index.html" class="nav__link">
+                                    الدعم الفني
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    <!-- 🚫🚫🚫🚫 navbar  🚫🚫🚫🚫-->
+    
+    <!-- ⭐⭐⭐⭐⭐ breadcrumb  ⭐⭐⭐⭐⭐-->
+        <div class="bottom__nav">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-6 d-none d-md-block">
+                        <div class="nav__breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb m-0 ">
+                                <li class="breadcrumb-item"><a href="#">لوحة التحكم</a></li>
+                                <li class="breadcrumb-item"><a href="#">برنامج قلبك يعرف</a></li>
+                                <li class="breadcrumb-item"><a href="#">فصول البرنامج</a></li>
+                                <li class="breadcrumb-item"><a href="#">دروس البرنامج</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
+                        <div class="progress__program text-center">
+                            <p>
+                                نسبة انجازك
+                                <span>0%</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 🚫🚫🚫🚫  breadcrumb 🚫🚫🚫🚫-->
+
+    <!-- ⭐⭐⭐⭐⭐ layout  ⭐⭐⭐⭐⭐-->
+        <div class="layout-main">
+            <div class="container-fluid">
+                <div class="d-flex layout-row">
+                    <div class="side-open" id="sideMainOpen">
+                        <div class="icon">
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                    </div>
+                    <div class="side-menu --close" id="sideMenu">
+                        <!-- ⭐⭐⭐⭐⭐ sidebar  ⭐⭐⭐⭐⭐-->
+                        <aside class="side__bar-main">
+                            <div class="aside__top">
+                                <div class="close-side" id="closeSideMain">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </div>
+                                <form action="" class="aside__form">
+                                    <input type="search" class="__input" placeholder="ابحث">
+                                </form>
+                            </div>
+                            <ul class="side__items__section">
+                                <li class="side__item heading --heading-active">
+                                    <a href="../index.html">
+                                        الرئيسية
+                                    </a>
+                                </li>
+                                <li class="side__item --active">
+                                    <a href="../getting-started/index.html">
+                                        البداية
+                                    </a>
+                                </li>
+                                <li class="side__item ">
+                                    <a href="../lessone-page/index.html">
+                                        البرنامج
+                                    </a>
+                                </li>
+                                <li class="side__item ">
+                                    <a href="../bounce-courses/index.html">
+                                        المواد الاضافيه
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="side__items__section">
+                                <li class="side__item heading">
+                                    <p class="heading">
+                                        الموارد
+                                    </p>
+                                </li>
+                                <li class="side__item ">
+                                    <a href="../calendar/index.html">
+                                        الرزمانة
+                                    </a>
+                                </li>
+                                <li class="side__item ">
+                                    <a href="../fqa/index.html">
+                                        الاسئلة الشائعة
+                                    </a>
+                                </li>
+                                <li class="side__item ">
+                                    <a href="../questionnaire/index.html">
+                                        اراء المشتركين
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="aside__bottom">
+                                <p class="heading">شاركنا قصتك الملهمة</p>
+                                <a href="#">
+                                    اضغط هنا لمشاركة قصتك
+                                </a>
+                            </div>
+                        </aside>
+                    <!-- 🚫🚫🚫🚫 sidebar  🚫🚫🚫🚫-->
+                    </div>
+                    <div class="layout-main calendar-main">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <header class="section-heading">
+                                        <p class="up__heading text-center">
+                                            الرزمانة الشخصية
+                                        </p>
+                                        <h3 class="heading text-center">
+                                            تعرف علي الاحداث القادمه
+                                        </h3>
+                                        <p class="sub__heading  text-center">
+                                            هنالك العد من الأنواع المتوفرة لنصوص لوريم
+                                        </p>
+                                    </header>
+                                </div>
+                                <div class="col-12">
+                                    <div class="table__btns d-flex flex-md-row flex-column justify-content-center justify-content-md-between">
+                                        <div class="right__btns d-flex align-items-center justify-content-center justify-content-md-start">
+                                            <button class="filter__btn">
+                                                جدول
+                                            </button>
+                                            <button class="filter__btn">
+                                                اسبوع
+                                            </button>
+                                            <button class="filter__btn --active">
+                                                شهر
+                                            </button>
+                                        </div>
+                                        <div class="left__btns  d-flex align-items-center ">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>2021 يناير</option>
+                                                <option value="1">2021 فبراير</option>
+                                                <option value="2">2021 ماس</option>
+                                                <option value="3">2021 ابريل</option>
+                                            </select>
+                                            <button class="__icon">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                            <button class="__icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </button>
+                                            <button class="filter__btn ">
+                                                اليوم
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <table class="table__bills">
+                                        <tr>
+                                            <th>
+                                                <div class="t__h --blue">
+                                                    السبت
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="t__h ">
+                                                    الاحد
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="t__h">
+                                                    الاثنين
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="t__h">
+                                                    الثلاثاء
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="t__h">
+                                                    الاربعاء
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="t__h">
+                                                    الخميس
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="t__h --blue">
+                                                    الجمعة
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr class="t__r">
+                                            <td> 
+                                                <div class="t__d --blue">
+                                                    1
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d" >
+                                                    2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    3
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    4
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    5
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d  --blue">
+                                                    7
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="t__r">
+                                            <td> 
+                                                <div class="t__d --blue">
+                                                    8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    9
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    10
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    11
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    13
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d  --blue">
+                                                    14
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="t__r">
+                                            <td> 
+                                                <div class="t__d --blue">
+                                                    15
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d ">
+                                                    16
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    17
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    18
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    19
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    20
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d  --blue">
+                                                    21
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="t__r">
+                                            <td> 
+                                                <div class="t__d --blue">
+                                                    22
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d ">
+                                                    23
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    24
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    25
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d --active">
+                                                    <span class="cen-row">
+                                                        26
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    27
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d --blue">
+                                                    28
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="t__r">
+                                            <td> 
+                                                <div class="t__d --blue">
+                                                    30
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    31
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    1
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    3
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d">
+                                                    4
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="t__d --blue">
+                                                    5
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-12">
+                                    <p class="content__bottom text-md-start text-center">
+                                        توقيت التقويم: (GMT 03:00) الكويت
+                                    </p>
+                                </div>
+                                <div class="co-12 cen-row">
+                                    <a href="#" class="add__calendar">
+                                        اضافة التنبيه في الرزنامة
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apps__items d-flex align-items-center justify-content-center">
+                                        <div class="item">
+                                            <a href="#">
+                                                <img src="../src/icons/download (1).png" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img src="../src/icons/download (2).png" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img src="../src/icons//download (3).png" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img src="../src/icons/download (4).png" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 🚫🚫🚫🚫  layout 🚫🚫🚫🚫-->
+
+    <!-- ⭐⭐⭐⭐⭐ footer ⭐⭐⭐⭐⭐-->
+    <footer class="footer__main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-right d-flex align-items-center">
+                    <div class="footer__logo">
+                        <img src="../src/images/reham-logo-arabic-white.png" class="img-fluid" alt="logo">
+                    </div>
+                    <p class="copy-right">
+                        جميع الحقوق محفوظة @2021
+                    </p>
+                </div> 
+                <div class="col-md-6 footer-left d-flex justify-content-end">
+                    <ul class="list-unstyled footer__items cen-row">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                سياسية الخصوصية
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                الشروط والاحكام
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- 🚫🚫🚫🚫 footer 🚫🚫🚫🚫--> 
+
+    <!-- sidebar main -->
+    <script src="../javascript/components/sidebar-main.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+aside.side__bar-main{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: $gray-05;
+
+    position: relative;
+    z-index: 1000;
+    .aside__top{
+        align-self: flex-end;
+        .close-side{
+            display: flex;
+            justify-content: end;
+            cursor: pointer;
+            margin-bottom: 10px;
+            .icon{
+                width: 40px;
+                height: 40px;
+                background-color: $primary-01;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    display: block;
+                    font-size: 1.7rem;
+                    color: $white;
+                }
+            }
+        }
+        .aside__form{
+            padding: 0 15px ;
+            input.__input{
+                width: 180px;
+                padding: 0px 15px;
+                border: 2px solid $gray-03;
+                border-radius: 90px;
+                &::placeholder{
+                    font-size: .9rem;
+                    text-align: center;   
+                }
+                &:focus{
+                    outline: 0;
+                    border-color: $primary-01 ;
+                }
+            }
+        }
+    }
+    .side__items__section{
+        list-style: none;
+        li.side__item{
+            margin-bottom: 20px;
+            padding:0 15px;
+            a{
+                display: block;
+                padding: 4px 20px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #a8a8a8;
+                transition: all .3s;
+                &:hover{
+                    color: $primary-01;
+                }
+            }
+            &.heading{
+                p,a{
+                    font-size: 1.2rem;
+                    padding: 4px 20px;
+                    font-weight: 700;
+                    color: $gray-01;
+                }
+            }
+            &.--heading-active{
+                background-color: #eeeeee;
+            }
+            &.--active{
+                a{
+                    color: $primary-01;
+                    font-weight: 700;
+                }
+            }
+            &.section__lesson {
+                .lesson__number{
+                    color: $primary-01;
+                }
+                a{
+                    color: $gray-03;
+                    font-weight: 400;
+                    font-size: 1.3em;
+                }
+                &.heading{
+                    a{
+                        
+                        color: $gray-04;
+                        font-weight: 700;
+                    }
+                }
+                &.--active{
+                     background-color: #eeeeee;
+
+                    .lesson__number{
+                        color: $gray-04;
+                        
+                    }
+                    a{
+                        color: $gray-01;
+                    }
+                }
+                &.--back{
+                    a{
+                        font-size: 1.4rem;
+                        color: $primary-01;
+                    }
+                }
+            }
+        }
+    }
+    .aside__bottom{
+        background-color: $primary-01;
+        background-image: url('../../src/images/flower-bg-white.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        text-align: center;
+        padding: 10px;
+        .heading{
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: $white;
+        }
+        a{
+            margin-top: 15px;
+            font-size: 1rem;
+            display: block;
+            font-weight: 500;
+            color: $white;
+        }
+    }
+    &.--closed{
+        width: 230px;
+    }
+    &.--open{
+        .side__bar-toggler{
+            display: none;
+        }
+        
+    }
+    
+    @media screen and (max-width: 320px) {
+        .aside__form{
+            input.__input{
+                width: 100px;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .side__items__section{
+            li{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                a{
+                    text-align: center;
+                }
+                &.section__lesson{
+                    padding: 0 15px;
+                }
+            }
+        }
+        background-color: $white;
+    }
+}

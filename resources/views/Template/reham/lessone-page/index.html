@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="../favicon_io/logo192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon_io/favicon-16x16.png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.rtl.css" />
+    <!-- fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="../css/style.css" />  
+    <title>Reham | Lesson</title>
+</head>
+<body>
+    <!-- ⭐⭐⭐⭐⭐ navbar  ⭐⭐⭐⭐⭐-->
+        <nav class="navbar__main">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-3 col-12 col-xs-3">
+                        <div class="nav__logo ">
+                            <img src="../src/images/reham-logo-arabic-white.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-9 col-md-6 d-flex justify-content-center justify-content-md-end">
+                        <ul class="nav__items d-flex list-unstyled justify-content-center  justify-content-md-end">
+                            <li class="nav__item">
+                                <a href="/lessones-page/index.html" class="nav__link">
+                                    البرامج
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/profile/index.html" class="nav__link">
+                                    حسابك
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/lessones-page/index.html" class="nav__link">
+                                    الدعم الفني
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    <!-- 🚫🚫🚫🚫 navbar  🚫🚫🚫🚫-->
+    
+    <!-- ⭐⭐⭐⭐⭐ breadcrumb  ⭐⭐⭐⭐⭐-->
+        <div class="bottom__nav">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-6 d-none d-md-block">
+                        <div class="nav__breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb m-0 ">
+                                <li class="breadcrumb-item"><a href="#">لوحة التحكم</a></li>
+                                <li class="breadcrumb-item"><a href="#">برنامج قلبك يعرف</a></li>
+                                <li class="breadcrumb-item"><a href="#">فصول البرنامج</a></li>
+                                <li class="breadcrumb-item"><a href="#">دروس البرنامج</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
+                        <div class="progress__program text-center">
+                            <p>
+                                نسبة انجازك
+                                <span>0%</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 🚫🚫🚫🚫  breadcrumb 🚫🚫🚫🚫-->
+
+   <!-- ⭐⭐⭐⭐⭐ modal  ⭐⭐⭐⭐⭐-->
+        <div class="modal fade modal__lesson" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header cen-col">
+                    <button type="button" class="close close__icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </button>
+                    <p class="heading">
+                        حل الاختبار
+                    </p>
+                    <p class="sub__heading">
+                        خطوة 1 من 2
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="progress-bar__box">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 50%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">50%</div>
+                            </div>
+                        </div>
+                        <div class="ask__box">
+                            <p class="ask__heading">
+                                السؤال رقم 1. ما هو الأهم؟ قائمة هي: 
+                            </p>
+                            <div class="input__container">
+                                <label class="container__label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    الحب الروحي
+                                </label>
+                            </div>
+                            <div class="input__container">
+                                <label class="container__label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    هي الروح
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bottmom__btns d-flex align-items-center">
+                            <div class="input__container __submit">
+                                <input type="submit" value="التالي" class="__input">
+                            </div>
+                            <div class="input__container __submit __back">
+                                <input type="submit" value="السابق" class="__input">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    <!-- 🚫🚫🚫🚫  modal 🚫🚫🚫🚫-->
+
+    <!-- ⭐⭐⭐⭐⭐ layout  ⭐⭐⭐⭐⭐-->
+    <div class="layout-main">
+        <div class="container-fluid">
+            <div class="d-flex layout-row">
+                <div class="side-open" id="sideMainOpen">
+                    <div class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+                <div class="side-menu --open" id="sideMenu">
+                    <!-- ⭐⭐⭐⭐⭐ sidebar  ⭐⭐⭐⭐⭐-->
+                    <aside class="side__bar-main">
+                        <div class="aside__top">
+                            <div class="close-side" id="closeSideMain">
+                                <div class="icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="side__items__section ">
+                            <li class="side__item --back section__lesson">
+                                <a href="../getting-started/index.html">
+                                    الرجوع لصفحة البداية
+                                </a>
+                            </li>
+                            <li class="side__item heading section__lesson">
+                                <a href="../getting-started/index.html">
+                                    فصول البرنامج
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    01
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item --active section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    02
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    03
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    04
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    05
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    06
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    07
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    08
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    09
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    010
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                            <li class="side__item section__lesson d-flex align-items-center">
+                                <span class="lesson__number">
+                                    11
+                                </span>
+                                <a href="../questionnaire/index.html">
+                                    اسم افتراضي
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                <!-- 🚫🚫🚫🚫 sidebar  🚫🚫🚫🚫-->
+                </div>
+                <div class="layout-main lesson__main">
+                    <div class="container custom-container">
+                        <div class="row">
+                            <div class="col-12 cen-col">
+                                <div class="header__video__box">
+                                    <div class="video-container  cen-row">
+                                        <iframe 
+                                        title="vimeo-player"
+                                        src="https://player.vimeo.com/video/835443914?h=cd7c9d3db9"
+                                        height="360" 
+                                        frameborder="0"  
+                                        allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div class="lesson__ctr">
+                                        <div class="__top d-flex align-items-center justify-content-between">
+                                            <button class="lesson__toggle">
+                                                <a href="#">
+                                                    الدرس التالي
+                                                </a>
+                                            </button>
+                                            <button class="lesson__toggle">
+                                                <a href="#">
+                                                    الدرس السابق
+                                                </a>
+                                            </button>
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <label class="container__label">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <p class="heading">
+                                                   ضع علامة مكتمل
+                                                </p>
+                                            </div>
+                                            <button type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+                                                <a href="#" class="lesson__link d-block">
+                                                    اذهب الى الاختبار
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="lesson__data__card">
+                                    <ul class="nav__data__items list-unstyled __items d-flex align-items-center">
+                                        <li class="__item --active">
+                                            نظرة عامة
+                                        </li>
+                                        <li class="__item" >
+                                            صوتي
+                                        </li>
+                                        <li class="__item ">
+                                            تحميل
+                                        </li>
+                                    </ul>
+                                    <div class="lesson__content">
+                                        <p class="lesson__body">
+                                            مقدمة للوحدة خطة فالخاصة بك. سيساعدك هذا الدرس على فهم كيفية إرساء الأساس لانطلاق رائع. قم بتنزيل، وهو ملخص تفصيلي لهذه الوحدة سيساعدك على التخطيط لعملية الإطلاق. مقدمة للوحدخطة الإطلاق الخاصة بك. سيساعدك هذا الدرس على فهم كيفية إرساء الأساس لانطلاق رائع. قم بتنزيل، وهو ملخص تفصيلي لهذه الوحدة سيساعدك على التخطيط لعملية الإطلاق.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="lesson__data__card">
+                                    <ul class="nav__data__items list-unstyled __items d-flex align-items-center">
+                                        <li class="__item 
+                                        ">
+                                            نظرة عامة
+                                        </li>
+                                        <li class="__item --active" >
+                                            صوتي
+                                        </li>
+                                        <li class="__item ">
+                                            تحميل
+                                        </li>
+                                    </ul>
+                                    <div class="lesson__content __audio">
+                                        <div class="audio__ctr">
+                                            <audio controls>
+                                                <source src="../src/audio/sample-0.ogg" type="audio/ogg">
+                                                <source src="../src/audio/sample-0.mp3" type="audio/mpeg">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="lesson__data__card">
+                                    <ul class="nav__data__items list-unstyled __items d-flex align-items-center">
+                                        <li class="__item ">
+                                            نظرة عامة
+                                        </li>
+                                        <li class="__item" >
+                                            صوتي
+                                        </li>
+                                        <li class="__item --active">
+                                            تحميل
+                                        </li>
+                                    </ul>
+                                    <div class="lesson__content lesson__data__cards d-flex align-items-center justify-content-around">
+                                        <div class="lesson__data  cen-col">
+                                            <a href="#" class="data__box cen-col">
+                                                <i class="fa-solid fa-arrow-down"></i>
+                                                جميع الفايلات
+                                            </a>
+                                        </div>
+                                        <div class="lesson__data cen-col ">
+                                            <a href="#" class="data__box cen-col">
+                                                <i class="fa-regular fa-file-pdf"></i>
+                                                نسخةطبق الاصل
+                                            </a>
+                                        </div>
+                                        <div class="lesson__data --active cen-col">
+                                            <a href="#" class="data__box cen-col">
+                                                <i class="fa-solid fa-arrow-down"></i>
+                                                صوتي
+                                            </a>
+                                        </div>
+                                        <div class="lesson__data  cen-col">
+                                            <a href="#" class="data__box cen-col">
+                                                <i class="fa-solid fa-arrow-down"></i>
+                                                فيديو
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="lesson-comments">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="header">
+                                                <p class="heading text-center">
+                                                    عرفنا على نفسك و شاركنا ارائك بالتعليقات
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="user-comment">
+                                                <div class="user__box d-flex flex-column">
+                                                    <div class="user__comment__top d-flex align-items-center" >
+                                                        <i class="fa-solid fa-gear __icon"></i>
+                                                        <p class="user__name ">تم تسجيل الدخول بواسطة  <span class="__name"> اسم افتراضي </span> |</p>
+                                                        <a href="#" class="__logout">   تسجيل الخروج </a>
+                                                    </div>
+                                                    <div class="comment__form">
+                                                        <form action="" class="__form d-flex">
+                                                            <div class="user__img">
+                                                                <img src="../src/images/tetsimoniales.png" class="__img" alt="user">
+                                                            </div>
+                                                            <textarea  rows="3" class="comment__area" placeholder="انضم الى النقاشات">
+                                                            </textarea>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="commment__card d-flex">
+                                                    <div class="commment__left d-flex flex-column align-items-center">
+                                                        <div class="__img">
+                                                            <img src="../src/images/testimonilaes.jpg" alt="user" class="img-fluid">
+                                                        </div>
+                                                        <p class="user__tag">Member</p>
+                                                    </div>
+                                                    <div class="commment__right">
+                                                        <p class="comment__auth">اسم افتراضي</p>
+                                                        <p class="comment__body">
+                                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+                                                        </p>
+                                                        <div class="comment__down d-flex justify-content-between align-items-center">
+                                                            <div class="comment__date">
+                                                                7 days ago
+                                                            </div>
+                                                            <div class="replay__button cen-row">
+                                                                <i class="fa-regular fa-comment"></i>
+                                                                replay
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="commment__card d-flex">
+                                                    <div class="commment__left d-flex flex-column align-items-center">
+                                                        <div class="__img">
+                                                            <img src="../src/images/testimonilaes.jpg" alt="user" class="img-fluid">
+                                                        </div>
+                                                        <p class="user__tag">Member</p>
+                                                    </div>
+                                                    <div class="commment__right">
+                                                        <p class="comment__auth">اسم افتراضي</p>
+                                                        <p class="comment__body">
+                                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+                                                        </p>
+                                                        <div class="comment__down d-flex justify-content-between align-items-center">
+                                                            <div class="comment__date">
+                                                                7 days ago
+                                                            </div>
+                                                            <div class="replay__button cen-row">
+                                                                <i class="fa-regular fa-comment"></i>
+                                                                replay
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="commment__card d-flex">
+                                                    <div class="commment__left d-flex flex-column align-items-center">
+                                                        <div class="__img">
+                                                            <img src="../src/images/testimonilaes.jpg" alt="user" class="img-fluid">
+                                                        </div>
+                                                        <p class="user__tag">Member</p>
+                                                    </div>
+                                                    <div class="commment__right">
+                                                        <p class="comment__auth">اسم افتراضي</p>
+                                                        <p class="comment__body">
+                                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+                                                        </p>
+                                                        <div class="comment__down d-flex justify-content-between align-items-center">
+                                                            <div class="comment__date">
+                                                                7 days ago
+                                                            </div>
+                                                            <div class="replay__button cen-row">
+                                                                <i class="fa-regular fa-comment"></i>
+                                                                replay
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 🚫🚫🚫🚫  layout 🚫🚫🚫🚫-->
+
+    <!-- ⭐⭐⭐⭐⭐ footer ⭐⭐⭐⭐⭐-->
+    <footer class="footer__main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-right d-flex align-items-center">
+                    <div class="footer__logo">
+                        <img src="../src/images/reham-logo-arabic-white.png" class="img-fluid" alt="logo">
+                    </div>
+                    <p class="copy-right">
+                        جميع الحقوق محفوظة @2021
+                    </p>
+                </div> 
+                <div class="col-md-6 footer-left d-flex justify-content-end">
+                    <ul class="list-unstyled footer__items cen-row">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                سياسية الخصوصية
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                الشروط والاحكام
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- 🚫🚫🚫🚫 footer 🚫🚫🚫🚫--> 
+
+    <!-- boostrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- sidebar main -->
+    <script src="../javascript/components/sidebar-main.js"></script>
+</body>
+</html>

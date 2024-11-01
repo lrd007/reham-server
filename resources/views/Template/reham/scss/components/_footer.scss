@@ -1,0 +1,101 @@
+@import '../utilize/color';
+.footer__main{
+    background-color: $primary-01;
+    padding: 10px 0;
+    .footer-right{        
+        gap: 25px;
+        .copy-right{
+            color: $white;
+        }
+        .footer__logo{
+            img{
+                width: 50px;
+            }
+        }
+    }
+    .footer__items{
+        .footer__item{
+            a{
+                color: $white;
+                margin: 0 15px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .footer-right{        
+            justify-content: center;
+        }
+        .footer-left{        
+            justify-content: center !important;
+        }
+    }
+}
+.footer{
+    margin-top: 50px ;
+    padding: 60px 0 25px;
+    background-color: $primary-01;
+    .footer__logo{
+        img{
+            width: 150px;
+        }
+    }
+    .footer__col{
+        margin: 15px 0;
+        .__icon{
+            margin: 0 9px;
+        }
+        .col__heading{
+            width: 100%;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .footer__items{
+            gap: 20px;
+            padding: 0;
+            .footer__item{
+                a{
+                    font-size: 1.4rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        .social-links{
+            gap: 15px;
+            margin: 30px 0;
+            .footer__lng{
+                margin: 0 ;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+        p.copy-rights{
+            color: #fff;
+            font-family: 700;
+            font-weight: 700;
+            font-size: 1.1rem;
+            a{
+                color: #fff;
+                font-family: 700;
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .footer__logo{
+            img{
+                width:100px;
+            }
+        }
+        .footer__bottom{
+            .social-links{
+                .social-icon{
+                    width: 23px;
+                }
+            }
+        }
+    }
+}
